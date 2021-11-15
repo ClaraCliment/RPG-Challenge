@@ -7,6 +7,10 @@
 |Deployment method     |`GitHub pages`                 |
 |Group composition     | solo or duo                     |
 
+## Here is my project 
+[Here is my game](https://claracliment.github.io/RPG-Challenge/)
+The game is not finished yet. The max and min aren't set yet, it needs a gameover popup massega when one of the players looses and there are few errors in the points calculation... I also would like to add some animations to the game.
+
 ## Rules
 
 1. If something is vague in the README, ask a colleague for help.  If you are still doubtful, then you can always request a coach to clarify.
