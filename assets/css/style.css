@@ -1,0 +1,345 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-color: #ececec;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Mohave", sans-serif;
+}
+
+header {
+  padding: 20px 0;
+  width: 75%;
+}
+
+header h1 {
+  font-size: 55px;
+  text-align: center;
+  font-family: "Pirata One", cursive;
+}
+
+header h3 {
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+
+main {
+  border-top: 1px solid black;
+  position: relative;
+  text-align: center;
+  width: 75vw;
+  margin: 0 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #fiches {
+  margin: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main #fiches #health_container_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #fiches #healthbar_1,
+main #fiches #healthbar_2 {
+  margin-top: 8px;
+  width: 100px;
+  height: 15px;
+  background-color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main #fiches #healthbar_1 #health1_level,
+main #fiches #healthbar_1 #health2_level,
+main #fiches #healthbar_2 #health1_level,
+main #fiches #healthbar_2 #health2_level {
+  position: absolute;
+  background-color: #9aff8c;
+  width: 100px;
+  height: 10px;
+}
+
+main #fiches #healthbar_1 {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main #fiches #healthbar_2 {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  right: 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+main #fiches #description {
+  background-color: white;
+  padding: 5px;
+  width: 200px;
+  border: 10px ridge #7e7e7e;
+  font-size: 14px;
+}
+
+main #fiches #fiche_1 {
+  text-align: left;
+}
+
+main #fiches #fiche_2 {
+  text-align: right;
+}
+
+main #fiches #player1_name,
+main #fiches #player2_name {
+  font-size: 24px;
+  font-family: "Pirata One", cursive;
+}
+
+main #persos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main #persos #vs_container {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main #persos #vs_container #vs {
+  width: 60px;
+  height: auto;
+}
+
+main #persos #perso1 img {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+main #persos #perso1 img,
+main #persos #perso2 img {
+  height: 250px;
+}
+
+main #creation_panels {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: "Mohave", sans-serif;
+}
+
+main #creation_panels .title_form {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+main #creation_panels form .submit {
+  color: black;
+  background-color: #bdbdbd;
+  font-weight: 500;
+}
+
+main #creation_panels form #name_1,
+main #creation_panels form #name_2 {
+  padding-left: 5px;
+}
+
+main #creation_panels form label,
+main #creation_panels form input,
+main #creation_panels form select {
+  margin: 5px;
+  height: 26px;
+  border: none;
+  width: 150px;
+  font-family: "Mohave", sans-serif;
+}
+
+main #creation_panels form select option {
+  font-family: "Mohave", sans-serif;
+}
+
+main #pannel_buttons {
+  margin: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main #pannel_buttons button {
+  margin: 5px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  border: none;
+  -webkit-box-shadow: 4px 4px 2px 1px rgba(161, 161, 161, 0.2);
+          box-shadow: 4px 4px 2px 1px rgba(161, 161, 161, 0.2);
+  font-family: "Mohave", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+main #pannel_buttons #hit_1,
+main #pannel_buttons #hit_2 {
+  background-color: #faffde;
+}
+
+main #pannel_buttons #hit_1:disabled,
+main #pannel_buttons #hit_2:disabled {
+  background-color: #9c9c9c;
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
+}
+
+main #pannel_buttons #heal_1,
+main #pannel_buttons #heal_2 {
+  background-color: #ffdede;
+}
+
+main #pannel_buttons #heal_1:disabled,
+main #pannel_buttons #heal_2:disabled {
+  background-color: #9c9c9c;
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
+}
+
+main #pannel_buttons #yield_1,
+main #pannel_buttons #yield_2 {
+  background-color: white;
+}
+
+main #pannel_buttons #yield_1:disabled,
+main #pannel_buttons #yield_2:disabled {
+  background-color: #9c9c9c;
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
+}
+
+footer {
+  width: 100%;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer p,
+footer div {
+  font-size: 12px;
+}
+/*# sourceMappingURL=style.css.map */

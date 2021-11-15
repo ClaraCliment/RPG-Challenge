@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Project</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Typo body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Typo titre -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Battle to Death</h1>
+        <h3>only the strongest ones will survive</h3>
+    </header>
+
+    <main>
+        <!-- An element to display both characters stats (visual, name, item, health...)  -->
+        <div id="fiches">
+            <!-- Fiche player 1-->
+            <div id="fiche_1" class="fiche_perso">
+                <p id="player1_name">Name player 1</p>
+                <p id="player1_race">Race player 1</p>
+                <p id="player1_item">Item player 1</p>
+                <div class="health_container">
+                    <p id="player1_health">❤️ Life points: 100</p>
+                    <div id="healthbar_1">
+                        <div id="health1_level"></div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Ici ira le texte qui décrit l'attaque-->
+            <div id="descrition_holder">
+                <p id="description">Player 1 starts the fight!</p>
+            </div>
+            <!-- Fiche player 2-->
+            <div id="fiche_2" class="fiche_perso">
+                <p id="player2_name">Name player 2</p>
+                <p id="player2_race">Race player 2</p>
+                <p id="player2_item">Item player 2</p>
+                <div class="health_container" id="health_container_2">
+                    <p id="player2_health">❤️ Life points: 100</p>
+                    <div id="healthbar_2">
+                        <div id="health2_level"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Here will come the players visuela + VS -->
+        <div id="persos">
+            <div id="perso1">
+                <img src="./ressources/img/vampire.png" alt="player1">
+            </div>
+            <div id="vs_container">
+                <img id="vs" src="./ressources/img/thunder.png" alt="">
+            </div>
+            <div id="perso2">
+                <img src="./ressources/img/human.png" alt="player2">
+            </div>
+        </div>
+
+
+        <!-- A panel with 6 buttons, 3 for each player (hit, heal & yield. Those are the moves.) -->
+
+        <div id="pannel_buttons">
+            <div id="player1_buttons">
+                <button id="hit_1">👊 Hit</button>
+                <button id="heal_1">❤️ Heal</button>
+                <button id="yield_1">🏳️ Yield</button>
+            </div>
+
+            <div id="player2_buttons">
+                <button id="hit_2">👊 Hit</button>
+                <button id="heal_2">❤️ Heal</button>
+                <button id="yield_2">🏳️ Yield</button>
+            </div>
+        </div>
+
+        <!-- A creation panel with inputs & dropdowns to create your character. (For now only name, items and race ) -->
+        <div id="creation_panels">
+            <div id="creation_panel1">
+                <!-- Form player 1-->
+                <form id="form_player1">
+                    <p class="title_form">PLAYER 1</p>
+                    <!-- Name of the player-->
+                    <label for="name">What's your name?</label><br>
+                    <input type="text" id="name_1" name="name" placeholder="ex: Julie la Vipère" required autofocus><br>
+                    <!-- List of items-->
+                    <label for="">Choose an item:</label><br>
+                    <select id="items1" name="items"><br>
+                        <option value="Boots">🥾 Boots</option>
+                        <option value="Staff">🥍 Staff</option>
+                        <option value="Sword">🗡️ Sword</option>
+                        <option value="Bow">🛡️ Bow</option>
+                    </select><br>
+                    <label for="">Choose a character:</label><br>
+                    <select id="race1" name="race"><br>
+                        <option value="Human">🦸‍♂️ Human</option>
+                        <option value="Orc">👹 Orc</option>
+                        <option value="Elf">🧝 Elf</option>
+                        <option value="Vampire">🧛 Vampire</option>
+                    </select><br>
+                    <input class="submit" type="submit">
+                </form>
+            </div>
+
+            <div id="creation_panel2">
+                <!-- Form player 2-->
+                <form id="form_player2">
+                    <p class="title_form">PLAYER 2</p>
+                    <!-- Name of the player-->
+                    <label for="name">What's your name?</label><br>
+                    <input type="text" id="name_2" name="name" placeholder="ex: Arnaud l'invincible" required><br>
+                    <!-- List of items-->
+                    <label for="">Choose an item:</label><br>
+                    <select id="items2" name="items"><br>
+                        <option value="Boots">🥾 Boots</option>
+                        <option value="Staff">🥍 Staff</option>
+                        <option value="Sword">🗡️ Sword</option>
+                        <option value="Bow">🛡️ Bow</option>
+                    </select><br>
+                    <label for="">Choose a character:</label><br>
+                    <select id="race2" name="race"><br>
+                        <option value="Human">🦸‍♂️ Human</option>
+                        <option value="Orc">👹 Orc</option>
+                        <option value="Elf">🧝 Elf</option>
+                        <option value="Vampire">🧛 Vampire</option>
+                    </select><br>
+                    <input class="submit" type="submit">
+                </form>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <p>&copy; Game created by Clara Climent. This game works only on desktop.</p>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from
+            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </div>
+    </footer>
+
+    <!-- Voici le js-->
+    <script src="./gamelogic.js"></script>
+    <script src="./player_1.js"></script>
+</body>
+
+</html>
