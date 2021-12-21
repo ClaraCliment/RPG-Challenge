@@ -1,4 +1,4 @@
-# Challenge: RPG Challenge
+# RPG Challenge
 |Challenge Parameters  |Challenge Details              |
 |:---------------------|:------------------------------|
 |Repository            |`js-rpg`                       |
